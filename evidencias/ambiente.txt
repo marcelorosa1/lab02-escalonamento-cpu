@@ -1,6 +1,0 @@
-Data......: 2026-10-01 19:43:34 UTC
-Sistema...: Ubuntu 24.04.4 LTS
-Kernel....: 6.18.44-fc-v50
-Arquitetura: x86_64
-Python....: 3.11.15
-matplotlib: 3.11.2

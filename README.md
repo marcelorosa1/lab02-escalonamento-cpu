@@ -42,7 +42,6 @@ Definições usadas em todo o laboratório:
 │   ├── 3_quantum_trocas.png
 │   └── 4_medias_comparativo.png
 ├── evidencias/
-│   ├── ambiente.txt           # Sistema, kernel e versões usadas na execução
 │   ├── saida_simulador.txt    # Log completo do simulador (FCFS, RR q=3, SJF, RR q=1, RR q=50)
 │   └── saida_graficos.txt     # Tabela quantum x trocas de contexto x espera média
 └── README.md
