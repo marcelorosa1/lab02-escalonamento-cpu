@@ -1,0 +1,55 @@
+
+--- SIMULACAO FCFS ---
+Proc P1: Fim=8ms, Espera=0ms, Retorno=8ms
+Proc P2: Fim=12ms, Espera=7ms, Retorno=11ms
+Proc P3: Fim=21ms, Espera=10ms, Retorno=19ms
+Proc P4: Fim=26ms, Espera=18ms, Retorno=23ms
+Tempo Medio de Espera:  8.75 ms
+Tempo Medio de Retorno: 15.25 ms
+Trocas de contexto: 3
+Gantt: |-----------P1----------|-----P2----|------------P3------------|------P4------|
+       0                       8          12                         21             26
+
+--- SIMULACAO ROUND ROBIN (Quantum = 3ms) ---
+Proc P1: Fim=23ms, Espera=15ms, Retorno=23ms
+Proc P2: Fim=16ms, Espera=11ms, Retorno=15ms
+Proc P3: Fim=26ms, Espera=15ms, Retorno=24ms
+Proc P4: Fim=21ms, Espera=13ms, Retorno=18ms
+Tempo Medio de Espera:  13.50 ms
+Tempo Medio de Retorno: 20.00 ms
+Trocas de contexto: 9
+Gantt: |---P1---|---P2---|---P3---|---P4---|---P1---|P2|---P3---|--P4-|--P1-|---P3---|
+       0        3        6        9       12       15 16       19    21    23       26
+
+--- SIMULACAO SJF (nao-preemptivo) ---
+Proc P1: Fim=8ms, Espera=0ms, Retorno=8ms
+Proc P2: Fim=12ms, Espera=7ms, Retorno=11ms
+Proc P3: Fim=26ms, Espera=15ms, Retorno=24ms
+Proc P4: Fim=17ms, Espera=9ms, Retorno=14ms
+Tempo Medio de Espera:  7.75 ms
+Tempo Medio de Retorno: 14.25 ms
+Trocas de contexto: 3
+Gantt: |-----------P1----------|-----P2----|------P4------|------------P3------------|
+       0                       8          12             17                         26
+
+--- SIMULACAO ROUND ROBIN (Quantum = 1ms) ---
+Proc P1: Fim=23ms, Espera=15ms, Retorno=23ms
+Proc P2: Fim=13ms, Espera=8ms, Retorno=12ms
+Proc P3: Fim=26ms, Espera=15ms, Retorno=24ms
+Proc P4: Fim=20ms, Espera=12ms, Retorno=17ms
+Tempo Medio de Espera:  12.50 ms
+Tempo Medio de Retorno: 19.00 ms
+Trocas de contexto: 23
+Gantt: |P1|P2|P1|P3|P2|P4|P1|P3|P2|P4|P1|P3|P2|P4|P1|P3|P4|P1|P3|P4|P1|P3|P1|---P3---|
+       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23       26
+
+--- SIMULACAO ROUND ROBIN (Quantum = 50ms) ---
+Proc P1: Fim=8ms, Espera=0ms, Retorno=8ms
+Proc P2: Fim=12ms, Espera=7ms, Retorno=11ms
+Proc P3: Fim=21ms, Espera=10ms, Retorno=19ms
+Proc P4: Fim=26ms, Espera=18ms, Retorno=23ms
+Tempo Medio de Espera:  8.75 ms
+Tempo Medio de Retorno: 15.25 ms
+Trocas de contexto: 3
+Gantt: |-----------P1----------|-----P2----|------------P3------------|------P4------|
+       0                       8          12                         21             26

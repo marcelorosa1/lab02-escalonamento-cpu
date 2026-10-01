@@ -1,0 +1,14 @@
+Quantum | Trocas de contexto | Espera media
+      1 |                 23 |     12.50 ms
+      2 |                 12 |     12.75 ms
+      3 |                  9 |     13.50 ms
+      4 |                  7 |     11.75 ms
+      5 |                  5 |     11.00 ms
+      6 |                  5 |     12.00 ms
+      7 |                  5 |     13.00 ms
+      8 |                  4 |      9.75 ms
+      9 |                  3 |      8.75 ms
+     10 |                  3 |      8.75 ms
+     50 |                  3 |      8.75 ms
+
+Graficos salvos em graficos/
